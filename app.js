@@ -44,6 +44,7 @@ app.get('/callback', (req, res) => {
         id: transactionId,
         status: status,
         code: code,
+        type: type,
         data: data || '{}',
         message: message,
         timestamp: new Date().toISOString()
